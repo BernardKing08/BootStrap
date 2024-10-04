@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<!--
+    Fix the collapse button icon to something more reasonable 
+    
+    Make the emails seperate i.e the email in the navbar and the email in the login card
+-->
+
+
+
+
+<body>
+    <!--Nav Bar section-->
+    <section>
+        <div class="navbar navbar-expand-lg  py-3">
+            <div class="container ">
+                <a href="#" class="navbar-brand text-white">
+                    ExpressBanking
+                </a>
+
+                <!--Collapse Button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon bg-white"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center " id="navmenu">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item mx-3">
+                          <a class="nav-link text-white" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                          <a class="nav-link text-white" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                          <a class="nav-link text-white" aria-disabled="true">SERVICE</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" aria-current="page" href="#">DESIGN</a>
+                        </li>
+                        <li class="nav-item mx-3 me-5">
+                            <a class="nav-link text-white" aria-current="page" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="input-group news-input ms-auto">
+                        <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn bg-dark text-light" type="button" id="button-addon2">Button</button>
+                    </div>
+                    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--Body section-->
+    <section id="banner">
+        <div class="container text-white">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-8 banner-class text-lg-start mb-5 ">
+                    <h1 class="banner-text-size">Web Design & <br><span class="text-warning fw-bold ">Development </span> <br> Course</h1>
+                    <p class="lead my-4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing  elit. Nam quis vel molestias, 
+                        veritatis, labore unde explicabo error iste optio ipsum, placeat assumenda quasi odio 
+                        exerci
+                    </p>
+                        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                            Start enrollment
+                        </button>
+                </div>
+
+                <!--Card section-->
+                <div class="col-md-4 card text-center text-bg-dark">
+                    <div class="card-header lead fw-bold">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <!--Form in list group format-->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-dark">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-dark text-white border-0" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control bg-dark text-white border-0" id="floatingPassword" placeholder="">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="card-text">Don't have an account? <br> <span class="text-warning">Sign up</span> here</p>
+                        <a href="#" class="btn btn-warning">Go somewhere</a>
+                    </div>
+                    <!--Social media links-->
+                    <div class="card-footer text-body-primary">
+                        <i class="bi bi-twitter mx-1"></i>
+                        <i class="bi bi-facebook mx-1"></i>
+                        <i class="bi bi-linkedin mx-1"></i>
+                        <i class="bi bi-instagram mx-1"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

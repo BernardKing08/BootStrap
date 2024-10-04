@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 0px;
+}
+
+.navbar{
+    /*
+    original
+    
+    background: linear-gradient(to right, #add8e6, #00008b);
+    background: linear-gradient(to right, #FFD700, #000000d0);
+    background: linear-gradient(to right, #FFD700, #000000b9); /* Gold to Black */
+    
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+     /* Gold to Black */
+    padding: 0 !important;
+    color: #ffffff;
+}
+
+.navbar-brand img{
+    width: 40px; 
+    border-radius: 25px;
+    height: 40px; 
+    
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600px;
+    float: right;
+    text-align: left;
+}
+
+/*navbar and navbar toggler*/
+.navbar-toggler{
+    outline: none !important;
+}
+.bi-bar-chart-steps{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+/*Banner section*/
+#banner{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: white;
+    padding-top: 5%;
+}
+.promo-title{
+    font-size: 40px !important;
+    font-weight: 600 !important;
+    margin-top: 100px;
+}
+.bi-play-circle{
+    font-size: 45px;
+    margin: 20px;
+    color: black;
+}
+#banner a{
+    color: white;
+    text-decoration: none;
+}
+#banner a .watch-tutorials{
+    display: inline;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.bottom-img {
+    width: 100%;
+    
+}
+
+/*Services section*/
+#services{
+    padding: 80px 0px;
+}
+.services-img{
+    width: 100px;
+    margin-top: 20px;
+}
+.services{
+    padding: 20px;
+}
+.services h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.title:before{
+    content: "";
+    background-color: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title:after{
+    content: "";
+    background-color: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+/*About us*/
+#about-us{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+.about-title{
+    font-size: 40px;
+    font-weight: 600px;
+    margin-top: 8%;
+}
+.about-us ul li{
+    margin: 10px 0px;
+}
+.about-us ul{
+    margin-left: 20px;
+}
+
+/*Testimonials*/
+#testimonials{
+    margin: 100px 0;
+}
+.testimonials{
+    border-left: 4px solid #7b1798 ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+}

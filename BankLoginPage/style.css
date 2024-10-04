@@ -1,0 +1,34 @@
+body {
+    background-image: url('vlcsnap-error905.png');
+    background-size: cover;
+}
+
+@media(min-width: 768px){
+    .news-input{
+        width: 40%;
+        margin-left: 50px;
+    }
+}
+
+#banner {
+    background-image: url('images/OIP.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .banner-class {
+    width: 50%;
+    padding-top: 75px;
+    background-image: url('images/OIP.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-text-size {
+    font-size: 45px;
+}
+
+.form-floating > label {
+    color: rgb(255, 255, 255);
+}
