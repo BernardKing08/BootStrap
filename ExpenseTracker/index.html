@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <div class="row vh-100">
+        
+        <!-- Sidebar -->
+        <div class="col-3 col-md-2 bg-primary text-white d-flex flex-column p-0">
+            <div class="text-center py-4">
+            <img src="https://via.placeholder.com/100" class="rounded-circle mb-2" alt="Profile Picture">
+            <h6 class="mb-0">Dot</h6>
+            <small>The Ant Agency</small>
+            </div>
+            <nav class="nav flex-column">
+            <a href="#" class="nav-link text-white px-4">Dashboard</a>
+            <a href="#" class="nav-link text-white px-4">Invoices</a>
+            <a href="#" class="nav-link text-white px-4">Clients</a>
+            <a href="#" class="nav-link text-white px-4 bg-opacity-50 bg-light">Expenses</a>
+            <a href="#" class="nav-link text-white px-4">Projects</a>
+            <a href="#" class="nav-link text-white px-4">Time Tracking</a>
+            </nav>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="col-9 col-md-10" style="padding-left: 30px;">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+            <h2>Expenses</h2>
+            <button class="btn btn-success rounded-pill">New Expense</button>
+            </div>
+
+            <!-- Recently Updated Expenses -->
+            <h5 class="my-4">Recently Updated</h5>
+            <div class="row gx-3 gy-4">
+            <!-- Expense Cards -->
+            <div class="col-md-2">
+                <div class="card text-center h-100">
+                <div class="card-body">
+                    <h6 class="card-title">Tuck Shop</h6>
+                    <p class="text-muted mb-1">10/10/16</p>
+                    <p class="text-primary fw-bold">$20.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-center h-100">
+                <div class="card-body">
+                    <h6 class="card-title">Virgin Atlantic</h6>
+                    <p class="text-muted mb-1">11/03/16</p>
+                    <p class="text-primary fw-bold">$600.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-center h-100">
+                <div class="card-body">
+                    <h6 class="card-title">HackerYou</h6>
+                    <p class="text-muted mb-1">11/05/16</p>
+                    <p class="text-primary fw-bold">$3000.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-center h-100">
+                <div class="card-body">
+                    <h6 class="card-title">Mailchimp</h6>
+                    <p class="text-muted mb-1">11/08/16</p>
+                    <p class="text-primary fw-bold">$25.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card text-center h-100">
+                <div class="card-body">
+                    <h6 class="card-title">Aboveground Art Supplies</h6>
+                    <p class="text-muted mb-1">11/15/16</p>
+                    <p class="text-primary fw-bold">$98.00</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- All Expenses Table -->
+            <h5 class="my-4">All Expenses</h5>
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+            </div>
+
+            <table class="table table-hover">
+            <thead class="table-light">
+                <tr>
+                <th scope="col"><input type="checkbox" class="form-check-input"></th>
+                <th scope="col">Vendor/Category</th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><input type="checkbox" class="form-check-input"></td>
+                <td>Aboveground Art Supplies</td>
+                <td>09/01/16</td>
+                <td>Sketchbook, TomBoys, Ink</td>
+                <td>$98.00</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" class="form-check-input"></td>
+                <td>Mailchimp</td>
+                <td>11/08/16</td>
+                <td>Monthly Subscription</td>
+                <td>$25.00</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" class="form-check-input"></td>
+                <td>HackerYou</td>
+                <td>11/05/16</td>
+                <td>UX Design Course</td>
+                <td>$3000.00</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
