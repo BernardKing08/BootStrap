@@ -4,128 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
-    <div class="container-fluid">
-        <div class="row vh-100">
-        
-        <!-- Sidebar -->
-        <div class="col-3 col-md-2 bg-primary text-white d-flex flex-column p-0">
-            <div class="text-center py-4">
-            <img src="https://via.placeholder.com/100" class="rounded-circle mb-2" alt="Profile Picture">
-            <h6 class="mb-0">Dot</h6>
-            <small>The Ant Agency</small>
-            </div>
-            <nav class="nav flex-column">
-            <a href="#" class="nav-link text-white px-4">Dashboard</a>
-            <a href="#" class="nav-link text-white px-4">Invoices</a>
-            <a href="#" class="nav-link text-white px-4">Clients</a>
-            <a href="#" class="nav-link text-white px-4 bg-opacity-50 bg-light">Expenses</a>
-            <a href="#" class="nav-link text-white px-4">Projects</a>
-            <a href="#" class="nav-link text-white px-4">Time Tracking</a>
-            </nav>
-        </div>
+    <div class="container">
+        <div class="row">
         
         <!-- Main Content -->
-        <div class="col-9 col-md-10" style="padding-left: 30px;">
-            <div class="d-flex justify-content-between align-items-center mt-4">
-            <h2>Expenses</h2>
-            <button class="btn btn-success rounded-pill">New Expense</button>
+        <div class="col-12" style="padding: 30px;">
+            <!--Nav Bar section-->
+            <section>
+                <div class="navbar navbar-expand-lg  py-3">
+                    <div class="container ">
+                        <a href="#" class="navbar-brand text-white">
+                            ExpressTracking
+                        </a>
+        
+                        <!--Collapse Button-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                            <span class="navbar-toggler-icon bg-white"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item mx-2">
+                                  <a class="nav-link text-white" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                  <a class="nav-link text-white" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-white" aria-current="page" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+
+                            <button id="newExpenseBtn" class="btn btn-warning rounded-pill">New Expense</button>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Expense Form Section -->
+            <div id="newExpenseSection" class="mt-4" style="display: none;">
+                <div class="card">
+                    <div class="card-header">Add New Expense</div>
+                    <div class="card-body">
+                        <form id="newExpenseForm">
+                            <div class="mb-3">
+                                <label for="expenseVendor" class="form-label">Vendor/Category</label>
+                                <input type="text" id="expenseVendor" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expenseDate" class="form-label">Date</label>
+                                <input type="date" id="expenseDate" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expenseDescription" class="form-label">Description</label>
+                                <textarea id="expenseDescription" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expenseAmount" class="form-label">Amount</label>
+                                <input type="number" id="expenseAmount" class="form-control" step="0.01" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Expense</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <!-- Recently Updated Expenses -->
-            <h5 class="my-4">Recently Updated</h5>
+            <h5 class="my-4 text-center text-warning biggerText">Recently Updated</h5>
             <div class="row gx-3 gy-4">
-            <!-- Expense Cards -->
-            <div class="col-md-2">
-                <div class="card text-center h-100">
-                <div class="card-body">
-                    <h6 class="card-title">Tuck Shop</h6>
-                    <p class="text-muted mb-1">10/10/16</p>
-                    <p class="text-primary fw-bold">$20.00</p>
+                <!-- Expense Cards -->
+                <div class="col-md-2">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <h6 class="card-title">Tuck Shop</h6>
+                            <p class="text-muted mb-1">10/10/16</p>
+                            <p class="text-primary fw-bold">$20.00</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card text-center h-100">
-                <div class="card-body">
-                    <h6 class="card-title">Virgin Atlantic</h6>
-                    <p class="text-muted mb-1">11/03/16</p>
-                    <p class="text-primary fw-bold">$600.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card text-center h-100">
-                <div class="card-body">
-                    <h6 class="card-title">HackerYou</h6>
-                    <p class="text-muted mb-1">11/05/16</p>
-                    <p class="text-primary fw-bold">$3000.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card text-center h-100">
-                <div class="card-body">
-                    <h6 class="card-title">Mailchimp</h6>
-                    <p class="text-muted mb-1">11/08/16</p>
-                    <p class="text-primary fw-bold">$25.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card text-center h-100">
-                <div class="card-body">
-                    <h6 class="card-title">Aboveground Art Supplies</h6>
-                    <p class="text-muted mb-1">11/15/16</p>
-                    <p class="text-primary fw-bold">$98.00</p>
-                </div>
-                </div>
-            </div>
+                <!-- Add other expense cards as needed -->
             </div>
 
             <!-- All Expenses Table -->
-            <h5 class="my-4">All Expenses</h5>
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
-            </div>
+            <h5 class="my-4 mt-5 text-center text-warning biggerText">All Expenses</h5>
 
             <table class="table table-hover">
-            <thead class="table-light">
-                <tr>
-                <th scope="col"><input type="checkbox" class="form-check-input"></th>
-                <th scope="col">Vendor/Category</th>
-                <th scope="col">Date</th>
-                <th scope="col">Description</th>
-                <th scope="col">Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td><input type="checkbox" class="form-check-input"></td>
-                <td>Aboveground Art Supplies</td>
-                <td>09/01/16</td>
-                <td>Sketchbook, TomBoys, Ink</td>
-                <td>$98.00</td>
-                </tr>
-                <tr>
-                <td><input type="checkbox" class="form-check-input"></td>
-                <td>Mailchimp</td>
-                <td>11/08/16</td>
-                <td>Monthly Subscription</td>
-                <td>$25.00</td>
-                </tr>
-                <tr>
-                <td><input type="checkbox" class="form-check-input"></td>
-                <td>HackerYou</td>
-                <td>11/05/16</td>
-                <td>UX Design Course</td>
-                <td>$3000.00</td>
-                </tr>
-            </tbody>
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col"><input type="checkbox" class="form-check-input"></th>
+                        <th scope="col">Vendor/Category</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input"></td>
+                        <td>Aboveground Art Supplies</td>
+                        <td>09/01/16</td>
+                        <td>Sketchbook, TomBoys, Ink</td>
+                        <td>$98.00</td>
+                    </tr>
+                    
+                    <!-- Add other table rows as needed -->
+                </tbody>
             </table>
         </div>
 
@@ -135,5 +123,23 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('newExpenseBtn').addEventListener('click', function() {
+            const expenseSection = document.getElementById('newExpenseSection');
+            if (expenseSection.style.display === 'none') {
+                expenseSection.style.display = 'block';
+                this.textContent = 'Close';
+                this.classList.remove('btn-success');
+                this.classList.add('btn-danger');
+            } else {
+                expenseSection.style.display = 'none';
+                this.textContent = 'New Expense';
+                this.classList.remove('btn-danger');
+                this.classList.add('btn-success');
+            }
+        });
+    </script>
 </body>
 </html>
