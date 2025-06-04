@@ -1,0 +1,132 @@
+/* Navbar collapse (mobile) */
+.navbar-collapse {
+  background-color: transparent !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.635);
+    backdrop-filter: blur(12px);
+    border-radius: 0 0 12px 12px;
+    padding: 1rem;
+    z-index: 999;
+    color: white;
+  }
+}
+
+/* Shadow transition on scroll */
+.shadow-transition {
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover underline effect */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00ffcc;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('./images/pexels-emily-ranquist-493228-1205651.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* Hero Buttons */
+.hero-btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-color: #198754;
+}
+
+@media (min-width: 992px) {
+  .hero-btn {
+    padding: 0.75rem 2rem !important;
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Features Section */
+.features-section {
+  padding: 2em 0;
+}
+
+.features-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.features-section .second-img {
+  height: 300px; /* Increase height */
+  object-fit: cover; /* Fill while preserving aspect ratio */
+}
+
+/* Services Section */
+.services-section {
+  background-color: rgba(169, 169, 169, 0.082);
+}
+
+.services-section .heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+/* Card Images */
+.fixed-img {
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the box without distortion */
+  width: 100%; /* Full card width */
+}
+
+/* Testimonial Images */
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-caption {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
