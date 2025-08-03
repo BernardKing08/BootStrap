@@ -738,3 +738,22 @@ body {
   }
 }
 
+/* Gold separator line */
+.gold-separator {
+    background-color: var(--gold-light); /* Using your palette variable */
+    height: 1px;
+    margin: 2rem 0;
+    border: 0;
+}
+
+/* Container for full-width elements */
+.full-width-container {
+  background-color: var(--cream);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
+}
