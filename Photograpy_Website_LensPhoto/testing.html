@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog carino</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/teststyle.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <h1>Lens & Light Photography</h1>
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Carousel -->
+  <div class="hero-carousel">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Concert Photography">
+          <div class="carousel-caption d-md-block">
+            <h3>Live Music Photography</h3>
+            <h5>Capturing the energy and emotion of live performances</h5>
+            <a href="#">View Gallery ></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Portrait Photography">
+          <div class="carousel-caption d-md-block">
+            <h3>Portrait Sessions</h3>
+            <h5>Professional portraits that reveal personality and character</h5>
+            <a href="#">View Gallery ></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Landscape Photography">
+          <div class="carousel-caption d-md-block">
+            <h3>Landscape Photography</h3>
+            <h5>Breathtaking natural scenes from around the world</h5>
+            <a href="#">View Gallery ></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section class="title-section pb-5" id="portfolio">
+    <h1>Portfolio</h1>
+    <p>Explore my photography collections. Click on images to view details about each project.</p>
+  </section>
+
+  <div class="container-fluid px-4">
+    <div class="row g-3" id="gallery">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-1">
+          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Urban Exploration">
+          <div class="desc">
+            <h4>Urban Exploration</h4>
+            <p>Cityscapes and architectural photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-2">
+          <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Fashion Photography">
+          <div class="desc">
+            <h4>Fashion</h4>
+            <p>Editorial and commercial fashion photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-3">
+          <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Wildlife Photography">
+          <div class="desc">
+            <h4>Wildlife</h4>
+            <p>Capturing animals in their natural habitats</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-4">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Mountain Landscapes">
+          <div class="desc">
+            <h4>Mountainscapes</h4>
+            <p>Breathtaking views from the world's highest peaks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-5">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Adventure Photography">
+          <div class="desc">
+            <h4>Adventure</h4>
+            <p>Extreme sports and outdoor adventures</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-6">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Street Photography">
+          <div class="desc">
+            <h4>Street Life</h4>
+            <p>Candid moments from urban environments</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-7">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Music Photography">
+          <div class="desc">
+            <h4>Music & Arts</h4>
+            <p>Performers and artists in their element</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-8">
+          <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nature Photography">
+          <div class="desc">
+            <h4>Nature's Details</h4>
+            <p>Macro and close-up nature photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="gallery-item" data-article="article-9">
+          <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Black & White Photography">
+          <div class="desc">
+            <h4>Monochrome</h4>
+            <p>Timeless black and white photography</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="container my-3 border border-1 opacity-50">
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <h2>About the Photographer</h2>
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Photographer" class="profile-img">
+      <p>With over 10 years of experience behind the lens, I specialize in capturing moments that tell stories. My approach combines technical expertise with artistic vision to create images that resonate emotionally.</p>
+      <p>Based in New York but working worldwide, I've had the privilege of working with major publications, commercial brands, and private clients to create compelling visual narratives across various genres of photography.</p>
+      <p>My work has been featured in National Geographic, The New York Times, and Vanity Fair, among other publications. When I'm not shooting, I lead photography workshops and mentor emerging photographers.</p>
+    </div>
+  </section>
+
+  <hr class="container my-5 border border-1 opacity-50">
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Get In Touch</h2>
+    <p>Interested in working together? Have questions about prints or licensing? Reach out and I'll get back to you soon.</p>
+    
+    <div class="contact-form">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:hello@lensandlight.com">hello@lensandlight.com</a>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>New York, NY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Overlay and View -->
+  <div class="article-overlay" id="articleOverlay"></div>
+  
+  <div class="article-controls" id="articleControls" style="display: none;">
+    <button class="control-btn" id="prevBtn">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="control-btn" id="closeBtn">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="control-btn" id="nextBtn">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div class="article-view" id="articleView">
+    <div class="article-header" id="articleHeader">
+      <h1 id="articleTitle">Project Title</h1>
+    </div>
+    <div class="article-content" id="articleContent">
+      <!-- Article content will be loaded here -->
+    </div>
+  </div>
+
+  <!-- Hidden Article Contents -->
+  <div class="article-contents">
+    <div class="article-html" data-article="article-1">
+      <h2>Urban Exploration</h2>
+      <p>This series explores the relationship between architecture and the urban environment. Shot over three years in major cities across the world, these images capture the unique character of each location while highlighting the universal themes of modern urban life.</p>
+      <p>Using both wide-angle and telephoto lenses, I focused on patterns, textures, and the interplay of light and shadow in man-made environments. Many of these shots were taken during golden hour to enhance the dramatic quality of the scenes.</p>
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>The project challenged me to find beauty in ordinary cityscapes and to see familiar environments with fresh eyes. Technical details: Shot with Canon R5, primarily using 24-70mm f/2.8 and 70-200mm f/2.8 lenses. Most images are long exposures ranging from 1 to 30 seconds.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-2">
+      <h2>Fashion Photography</h2>
+      <p>This fashion series was created in collaboration with emerging designers to showcase their collections in unique urban and natural environments. The contrast between the refined clothing and raw locations creates a compelling visual tension.</p>
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>Working with natural light whenever possible, I aimed to create images that feel both editorial and authentic. The series includes both studio shots with controlled lighting and outdoor locations where we embraced the challenges of changing conditions.</p>
+      <p>This project was particularly rewarding for the creative collaboration with stylists, models, and designers to bring a shared vision to life.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-3">
+      <h2>Wildlife Encounters</h2>
+      <p>This collection represents two years of patient observation and photography in national parks and wildlife reserves across Africa and North America. The goal was to capture animals in their natural behaviors without human interference.</p>
+      <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>Using long lenses and remote camera traps, I was able to document intimate moments in the lives of these magnificent creatures. The technical challenges were significant—from dealing with low light conditions at dawn and dusk to anticipating animal behavior.</p>
+      <p>This project has deepened my commitment to conservation photography and using images to raise awareness about protecting endangered species and habitats.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-4">
+      <h2>Mountainscapes</h2>
+      <p>This series documents my expeditions to some of the world's most dramatic mountain ranges. From the Himalayas to the Andes, these images capture the raw power and sublime beauty of high-altitude environments.</p>
+      <p>The physical challenge of reaching these locations was matched by the technical challenges of photography in extreme conditions. Cold temperatures, high winds, and rapidly changing weather required careful preparation and equipment choices.</p>
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>These images represent not just landscapes, but the experience of being in these remote, powerful places. I hope they convey some of the awe I felt while creating them.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-5">
+      <h2>Adventure Series</h2>
+      <p>This dynamic collection captures athletes pushing their limits in extreme environments and sports. From rock climbing to backcountry skiing, these images document the intersection of human capability and natural challenges.</p>
+      <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>Safety was paramount throughout this project, both for the athletes and the photography equipment. Many shots required specialized knowledge of the sports to anticipate action and position myself for the best angles.</p>
+      <p>The resulting images celebrate both athletic achievement and the stunning environments where these sports take place.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-6">
+      <h2>Street Life</h2>
+      <p>This street photography series captures unguarded moments in cities around the world. Rather than focusing on landmarks, I sought out the small interactions and scenes that reveal the character of each place.</p>
+      <p><strong>The best street photography feels both specific and universal—a particular moment that speaks to broader human experiences.</strong></p>
+      <p>Working with small, discreet cameras allowed me to blend into environments and capture authentic moments without influencing the scene. The project taught me patience and observation—sometimes waiting hours for the right elements to align.</p>
+      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+    </div>
+    
+    <div class="article-html" data-article="article-7">
+      <h2>Music & Arts</h2>
+      <p><strong>This series documents performers across musical genres, from intimate club shows to large festivals.</strong> The challenge was to capture not just the performers, but the energy and emotion of live music.</p>
+      <p>Working in constantly changing lighting conditions required technical adaptability and anticipation. I often used fast prime lenses to handle low light while maintaining image quality.</p>
+      <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>The resulting images represent collaborations with musicians to capture their artistic expression visually. Many of these photographs have been used for album artwork and promotional materials.</p>
+    </div>
+    
+    <div class="article-html" data-article="article-8">
+      <h2>Nature's Details</h2>
+      <p>This macro photography project explores the intricate details of the natural world that often go unnoticed. From delicate frost patterns to the intricate structures of plants and insects, these images reveal a miniature world of beauty.</p>
+      <p><strong>Macro photography requires immense patience and attention to technical details like depth of field and lighting.</strong></p>
+      <p>Specialized equipment including macro lenses, extension tubes, and focus stacking techniques were used to achieve these detailed images. Many shots required waiting for perfect conditions or working with controlled lighting setups in the field.</p>
+      <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+    </div>
+
+    <div class="article-html" data-article="article-9">
+      <h2>Monochrome</h2>
+      <p>This black and white series explores form, texture, and contrast without the distraction of color. By stripping away color, these images emphasize composition, light, and emotional content.</p>
+      <p>The project includes portraits, landscapes, and architectural studies—all united by the monochromatic treatment. Each image was carefully processed to maximize tonal range and emotional impact.</p>
+      <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"/>
+      <p>Working in black and white has fundamentally changed how I see and compose images, training me to notice light, shadow, and form in ways that translate powerfully to monochrome photography.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <div class="footer-arrow"></div>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-center">
+          <h3>&copy; 2023 Photography by <a href="#">Alex Morgan</a> | Lens & Light Studio</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/testjs.js"></script>
+</body>
+</html>
